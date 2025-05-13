@@ -1,5 +1,3 @@
-# TCGA-BRCA-Subtypes_NN
-
 # 🧬 Breast Cancer Subtype Classification Using TCGA RNA-Seq Data
 
 This project applies deep learning to classify breast cancer subtypes using RNA-Seq gene expression data from the **TCGA-BRCA** dataset. It includes a complete pipeline from data acquisition to model training and evaluation, with step-by-step instructions.
