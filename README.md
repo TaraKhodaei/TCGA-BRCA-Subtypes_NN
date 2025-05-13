@@ -46,7 +46,7 @@ Despite strong modeling, the best accuracy plateaus around 77%. Likely causes in
 
 ---
 
-## 🧾 Citation
+## Citation
 
 If you use this data or model, please cite:
 
@@ -54,7 +54,7 @@ If you use this data or model, please cite:
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the [MIT License](LICENSE), a permissive open-source license allowing reuse, modification, and distribution with attribution.
 
