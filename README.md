@@ -26,29 +26,13 @@ Breast cancer subtyping is critical for treatment planning. In this project, we 
 
 ---
 
-## ⚠️ Why Accuracy Isn't Higher?
-
 Despite strong modeling, the best accuracy plateaus around 77%. Likely causes include:
 
-- ✅ **Small sample size** (~500 samples)
-- ⚠️ **Biological label noise** — PAM50 subtypes have overlap
-- 🔬 **Single modality** — no clinical or CNV data included
-- 🧪 **No data augmentation** — only expression data used
-
----
-
-## 💡 Skills & Tools Demonstrated
-
-| Area              | Skill / Tool                         |
-|-------------------|---------------------------------------|
-| Data Source       | TCGA-BRCA (GDC Portal)                |
-| Preprocessing     | Log-transform, variance filtering     |
-| ML Pipeline       | Deep Neural Network (Keras)           |
-| Feature Selection | VarianceThreshold (Top 3K genes)      |
-| Regularization    | Dropout, BatchNorm, EarlyStopping     |
-| Optimization      | Adam, ReduceLROnPlateau               |
-| Evaluation        | Train/val/test split, accuracy, loss  |
-| Reproducibility   | Jupyter notebook, modular structure   |
+- **Small sample size** (~500 samples)
+- **Biological label noise** — PAM50 subtypes have overlap
+- **Single modality** — no clinical or CNV data included
+- **No data augmentation** — only expression data used
+- **Note** - This project focuses on transparency and reproducibility using only expression data and standard preprocessing to establish a baseline model. Future work could integrate multi-omics, larger datasets, or domain-specific embeddings for further gains.
 
 ---
 
@@ -80,6 +64,8 @@ This project is licensed under the [MIT License](LICENSE), a permissive open-sou
 
 ---
 
-## ✅ Summary
+## Summary
 
-This project demonstrates a practical application of machine learning in cancer subtype classification using RNA-Seq data. It balances accessibility with rigor and is built entirely from reproducible, open-access components.
+This project presents a reproducible deep learning pipeline for classifying breast cancer subtypes using RNA-Seq expression profiles from the TCGA-BRCA dataset. 
+The workflow demonstrates core skills in biomedical data preprocessing, model architecture design, and robust evaluation using TensorFlow/Keras. It also emphasizes responsible handling of open-access genomic data and provides a solid baseline for future extensions involving multi-omics or clinical data integration.
+
