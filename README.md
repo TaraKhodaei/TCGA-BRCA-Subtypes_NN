@@ -12,15 +12,15 @@ Breast cancer subtyping is critical for treatment planning. In this project, we 
 
 ## Model Comparison Summary
 
-| Model     | Feature Selection     | Architecture              | Regularization             | Final Accuracy | Final Loss | Notes                                 |
-|-----------|-----------------------|----------------------------|-----------------------------|----------------|-------------|----------------------------------------|
-| Model 1   | All genes             | 512 → 256 → 4             | None                        | ~74%           | ~2.79       | Simple baseline model                  |
-| Model 2   | Top 57K by variance   | 512 → 256 → 4             | Dropout (0.3)               | ~71%           | ~0.87       | Mild regularization added              |
-| Model 3   | Top 57K               | 512 → 256 → 4             | Dropout + EarlyStopping     | ~76% ✅        | ~1.51       | Best early-stage model                 |
-| Model 4   | Top 2.5K              | 256 → 128 → 64 → 4        | BatchNorm + Dropout         | ~76% ✅        | ~1.02       | Well-regularized, compact              |
-| Model 5   | Top 3K                | 512 → 256 → 128 → 64 → 4  | Dropout (0.5) + BN          | ~75.8% ✅      | ~0.9262     | Very consistent                        |
-| Model 6   | Top 3K                | Same as above             | Dropout + LR scheduler      | **77.3%** ✅ | **0.8981**  | Best performance overall               |
-| Model 7   | Top 3K                | Same + explicit val split | Dropout + LR scheduler      | ~76.6% ✅      | ~0.8688     | Very stable and generalizable         |
+| Model     | Feature Selection     | Architecture              | Regularization             | Final Accuracy | Final Loss | 
+|-----------|-----------------------|----------------------------|-----------------------------|----------------|-------------|
+| Model 1   | All genes             | 512 → 256 → 4             | None                        | ~74%           | ~2.79       | 
+| Model 2   | Top 57K by variance   | 512 → 256 → 4             | Dropout (0.3)               | ~71%           | ~0.87       | 
+| Model 3   | Top 57K               | 512 → 256 → 4             | Dropout + EarlyStopping     | ~76%        | ~1.51       | 
+| Model 4   | Top 2.5K              | 256 → 128 → 64 → 4        | BatchNorm + Dropout         | ~76%        | ~1.02       | 
+| Model 5   | Top 3K                | 512 → 256 → 128 → 64 → 4  | Dropout (0.5) + BN          | ~75.8%       | ~0.9262     | 
+| Model 6   | Top 3K                | Same as above             | Dropout + LR scheduler      | **77.3%**  | **0.8981**  | 
+| Model 7   | Top 3K                | Same + explicit val split | Dropout + LR scheduler      | ~76.6%       | ~0.8688     | 
 
 ---
 
