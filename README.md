@@ -48,12 +48,6 @@ Despite strong modeling, the best accuracy plateaus around 77%. Likely causes in
 
 ## Citation
 
-If you use this data or model, please cite:
-
-> The Cancer Genome Atlas Network. *Comprehensive molecular portraits of human breast tumors*. Nature 490, 61–70 (2012). https://doi.org/10.1038/nature11412
-
-## Citation
-
 If you use this **data**, please cite the TCGA consortium:
 
 > The Cancer Genome Atlas Network. *Comprehensive molecular portraits of human breast tumors*. Nature 490, 61–70 (2012). https://doi.org/10.1038/nature11412
@@ -61,7 +55,7 @@ If you use this **data**, please cite the TCGA consortium:
 If you use this **modeling pipeline or notebook**, please credit this repository with a link or citation in your work:
 
 > *TCGA-BRCA Subtype Classification with Deep Learning*.  
-> GitHub Repository: [your GitHub URL here]
+> GitHub Repository: [https://github.com/TaraKhodaei/TCGA-BRCA-Subtypes_NN.git]
 
 ---
 
